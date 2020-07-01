@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_07_01_030425) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "analogs", force: :cascade do |t|
     t.integer "product_m_id", null: false
     t.integer "product_a_id", null: false
