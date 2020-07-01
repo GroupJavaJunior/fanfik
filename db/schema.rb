@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(version: 2020_07_01_030425) do
   enable_extension "plpgsql"
 
   create_table "analogs", force: :cascade do |t|
-    t.integer "product_m_id", null: false
-    t.integer "product_a_id", null: false
+    t.bigint "product_m_id", null: false
+    t.bigint "product_a_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["product_a_id"], name: "index_analogs_on_product_a_id"

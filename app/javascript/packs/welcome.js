@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-import Counter from "../components/Counter";
+import Products from "../components/Products/Products";
 
 const Welcome = (props) => {
   return (
     <div>
-      <h1>Welcome from React</h1>
-      <Counter count={5} />
+      <Products />
     </div>
   );
 };
